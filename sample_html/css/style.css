@@ -1,0 +1,33 @@
+* {
+  font-family: monospace;
+}
+body {
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.list {
+  background: #eeeeee6e;
+  padding: 1rem;
+  width: 300px;
+  margin: auto;
+  border: 1px solid #3333334d;
+}
+.list .list_header {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+.list .list_item {
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  font-size: 1.2rem;
+}
+.list .list_item:not(:last-child) {
+  border-bottom: 2px solid #33333317;
+}
+.list .list_item .list_item_icon {
+  margin: 0 1rem;
+}
