@@ -1,31 +1,7 @@
-"use strict";
+import React from "react";
+import "./App.css";
 
-class List extends React.Component {
-  state = {};
-
-  componentDidMount() {
-    this.fetchUserData();
-  }
-
-  async fetchUserData() {
-    let users = await fetch("https://session.free.beeceptor.com/users");
-    debugger;
-  }
-
-  render() {
-    <div>data</div>;
-  }
-}
-
-const List = () => {
-  let users = [
-    { name: "John", id: "1" },
-    { name: "Windy", id: "2" },
-    { name: "Rachel", id: "3" },
-    { name: "Mark", id: "4" },
-    { name: "Steve", id: "5" },
-    { name: "Lary", id: "6" }
-  ];
+function App() {
   return (
     <div className="list">
       <div className="list_header">Users</div>
@@ -55,11 +31,6 @@ const List = () => {
       </div>
     </div>
   );
-};
+}
 
-const App = () => {
-  return <List />;
-};
-
-let domContainer = document.querySelector("#root");
-ReactDOM.render(<App />, domContainer);
+export default App;
